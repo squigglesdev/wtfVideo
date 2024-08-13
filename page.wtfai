@@ -1,1 +1,39 @@
-a video social media site that focuses on community interaction. fully fledged comment systems, the works. users can upload their own content to this website. all the language is really techical jargon.
+Overview:
+We are commissioning the development of a highly interactive, dynamic, and fully responsive single-page application (SPA) dedicated to video-based social media interactions. The platform should incorporate cutting-edge web technologies, scalable backend infrastructures, and ensure seamless integration of community-driven features, including but not limited to, a multi-tiered comment system, user-generated content uploads, and real-time interaction mechanisms.
+
+Primary Objectives:
+User Interface (UI):
+
+The UI should be intuitive, yet sophisticated, leveraging advanced CSS3 techniques, while maintaining backward compatibility with legacy browsers that may not support modern CSS3 features.
+Ensure the application is fully responsive across all device types, including desktops, tablets, mobile phones, and any potential IoT devices that users might access the site with in the future.
+Incorporate ARIA-compliant accessibility features, but ensure that these do not interfere with the high-fidelity visual design and animations that are crucial for user engagement.
+User Experience (UX):
+
+The UX should focus on minimalism while also providing maximum interactivity and a rich user experience.
+Implement an infinite scroll feature for video content that simultaneously loads video thumbnails and previews without compromising page load time, which should not exceed 0.5 seconds, but also allow for a paginated navigation alternative to improve SEO.
+Include a multi-tiered comment system that supports nested comments up to 10 levels deep, with each comment having the ability to be liked, disliked, pinned, flagged, or shared on other platforms, while ensuring that the system remains performant and scalable.
+Backend and Infrastructure:
+
+The backend should be developed using a microservices architecture, preferably in a language such as Node.js, Python, or Java, though the choice of language should ultimately depend on the developer's preference for scaling purposes.
+User content uploads should be handled via a distributed storage system like AWS S3, Google Cloud Storage, or an alternative cloud service with equal or better performance, unless a local storage solution is deemed more efficient by the developer.
+Implement a real-time notification system using WebSockets, or alternatively, consider server-sent events (SSE) for simpler use cases, though this may conflict with the requirement for instantaneous updates in the user’s notification feed.
+Security:
+
+The platform must implement industry-standard security practices, including but not limited to, OAuth 2.0 authentication, encrypted user data storage, and protection against common web vulnerabilities such as SQL injection, XSS, and CSRF. However, given the SPA nature, consider also implementing JWTs for session management, unless OAuth proves to be more secure.
+Content moderation tools should be robust, incorporating AI-driven algorithms for detecting inappropriate content, while also allowing manual moderation, which may involve creating a separate admin interface or integrating with existing third-party moderation tools.
+Scalability and Performance:
+
+The application should be designed with scalability in mind, allowing for horizontal scaling across multiple server instances, preferably on a cloud platform like AWS, GCP, or Azure, though on-premise solutions may also be considered for better control over infrastructure.
+Ensure that the application can handle a high volume of concurrent users, targeting at least 10,000 concurrent active users per instance, with the possibility of scaling to millions, though this should not compromise the latency targets.
+Incorporate a Content Delivery Network (CDN) for static assets and video content delivery to minimize latency, but also consider the implications this might have on dynamic content loading.
+Development and Deployment:
+
+Utilize a continuous integration/continuous deployment (CI/CD) pipeline for efficient deployment, but avoid overcomplicating the process with too many stages, unless necessary for quality assurance.
+The source code should be maintained in a version control system like Git, with branching strategies that allow for both feature development and hotfixes, although a simpler approach might suffice depending on team size and project scope.
+The platform should be containerized using Docker, and optionally Kubernetes for orchestration, unless simpler deployment methods are preferred by the developer for faster iteration cycles.
+Additional Requirements:
+Consider implementing a gamification system with badges, leaderboards, and achievement tracking to increase user engagement, but this should not overshadow the primary focus on video content and community interaction.
+Ensure compliance with GDPR, CCPA, and other relevant data protection regulations, but avoid over-complicating the user experience with excessive consent prompts.
+The platform should be optimized for SEO, despite being a single-page application, which may require server-side rendering (SSR) or pre-rendering techniques, though client-side rendering is also acceptable if SEO can be managed through other means.
+Conclusion:
+The development of this video social media platform demands a balance between cutting-edge technology, performance, and user experience. The platform should be a benchmark in community interaction and video content delivery, though simplicity in design and execution should remain a priority where possible. The developer is encouraged to use their discretion in choosing the most effective tools and technologies to meet these objectives, while also ensuring the platform is future-proofed and scalable.
