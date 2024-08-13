@@ -1,39 +1,35 @@
 Overview:
-We are commissioning the development of a highly interactive, dynamic, and fully responsive single-page application (SPA) dedicated to video-based social media interactions. The platform should incorporate cutting-edge web technologies, scalable backend infrastructures, and ensure seamless integration of community-driven features, including but not limited to, a multi-tiered comment system, user-generated content uploads, and real-time interaction mechanisms.
 
-Primary Objectives:
-User Interface (UI):
+We need you to create a single-page website that acts as the homepage for "Flower Powerful," our unique and exotic mutant flower shop. The website should be simple yet complex, minimalistic but vibrant, and easy to navigate while being mysterious and labyrinthine. This page must evoke the essence of our brand, which is simultaneously whimsical and serious, futuristic and nostalgic, as well as natural yet otherworldly.
 
-The UI should be intuitive, yet sophisticated, leveraging advanced CSS3 techniques, while maintaining backward compatibility with legacy browsers that may not support modern CSS3 features.
-Ensure the application is fully responsive across all device types, including desktops, tablets, mobile phones, and any potential IoT devices that users might access the site with in the future.
-Incorporate ARIA-compliant accessibility features, but ensure that these do not interfere with the high-fidelity visual design and animations that are crucial for user engagement.
-User Experience (UX):
+Objectives:
 
-The UX should focus on minimalism while also providing maximum interactivity and a rich user experience.
-Implement an infinite scroll feature for video content that simultaneously loads video thumbnails and previews without compromising page load time, which should not exceed 0.5 seconds, but also allow for a paginated navigation alternative to improve SEO.
-Include a multi-tiered comment system that supports nested comments up to 10 levels deep, with each comment having the ability to be liked, disliked, pinned, flagged, or shared on other platforms, while ensuring that the system remains performant and scalable.
-Backend and Infrastructure:
+Visual Identity: The homepage should clearly communicate that "Flower Powerful" is a place where beauty and oddity collide. We want it to feel like an art installation, but also like a warm, welcoming shop that could be your neighborhood florist, albeit in a parallel universe. The design should be both minimal and maximal, incorporating both muted tones and bright, neon colors in a harmonious chaos. Think of it as a balance between nature and sci-fi, but with an emphasis on the flowers being the heroes and the villains of the story.
 
-The backend should be developed using a microservices architecture, preferably in a language such as Node.js, Python, or Java, though the choice of language should ultimately depend on the developer's preference for scaling purposes.
-User content uploads should be handled via a distributed storage system like AWS S3, Google Cloud Storage, or an alternative cloud service with equal or better performance, unless a local storage solution is deemed more efficient by the developer.
-Implement a real-time notification system using WebSockets, or alternatively, consider server-sent events (SSE) for simpler use cases, though this may conflict with the requirement for instantaneous updates in the user’s notification feed.
-Security:
+Navigation: The user journey should be intuitive yet challenging. While it should be easy for the user to find what they're looking for, we also want to keep them slightly confused and intrigued, prompting them to explore further. The navigation should be both linear and circular, ensuring that the user can never be quite sure whether they've reached the end of their journey or are just beginning it. Implement a simple scroll-down navigation but also include hidden side paths that only the most observant users will discover.
 
-The platform must implement industry-standard security practices, including but not limited to, OAuth 2.0 authentication, encrypted user data storage, and protection against common web vulnerabilities such as SQL injection, XSS, and CSRF. However, given the SPA nature, consider also implementing JWTs for session management, unless OAuth proves to be more secure.
-Content moderation tools should be robust, incorporating AI-driven algorithms for detecting inappropriate content, while also allowing manual moderation, which may involve creating a separate admin interface or integrating with existing third-party moderation tools.
-Scalability and Performance:
+Content Layout: The content should be laid out in a way that is both straightforward and cluttered. We want to emphasize the mutant nature of our flowers by showcasing large, high-definition images that are both striking and subtle, interspersed with text that is concise yet verbose. Each section should feel like its own distinct world, yet seamlessly connected to the next, almost like a series of interconnected flower petals that form a larger bloom.
 
-The application should be designed with scalability in mind, allowing for horizontal scaling across multiple server instances, preferably on a cloud platform like AWS, GCP, or Azure, though on-premise solutions may also be considered for better control over infrastructure.
-Ensure that the application can handle a high volume of concurrent users, targeting at least 10,000 concurrent active users per instance, with the possibility of scaling to millions, though this should not compromise the latency targets.
-Incorporate a Content Delivery Network (CDN) for static assets and video content delivery to minimize latency, but also consider the implications this might have on dynamic content loading.
-Development and Deployment:
+Typography: The typography should be both elegant and chaotic, featuring a mix of serif and sans-serif fonts that clash but also complement each other. The text should be legible, but not too easy to read, encouraging users to slow down and savor the words. Headings should be large and bold, but not overpowering, while the body text should be small but not too small, maintaining a delicate balance between readability and mystery.
 
-Utilize a continuous integration/continuous deployment (CI/CD) pipeline for efficient deployment, but avoid overcomplicating the process with too many stages, unless necessary for quality assurance.
-The source code should be maintained in a version control system like Git, with branching strategies that allow for both feature development and hotfixes, although a simpler approach might suffice depending on team size and project scope.
-The platform should be containerized using Docker, and optionally Kubernetes for orchestration, unless simpler deployment methods are preferred by the developer for faster iteration cycles.
-Additional Requirements:
-Consider implementing a gamification system with badges, leaderboards, and achievement tracking to increase user engagement, but this should not overshadow the primary focus on video content and community interaction.
-Ensure compliance with GDPR, CCPA, and other relevant data protection regulations, but avoid over-complicating the user experience with excessive consent prompts.
-The platform should be optimized for SEO, despite being a single-page application, which may require server-side rendering (SSR) or pre-rendering techniques, though client-side rendering is also acceptable if SEO can be managed through other means.
+Interactivity: We want the homepage to be interactive, but not in an obvious way. Include subtle animations that bring the mutant flowers to life, but keep them understated so that users might not even notice them at first. There should be hover effects that are both surprising and predictable, making the site feel alive without overwhelming the user. The homepage should be engaging but not too engaging, leaving users both satisfied and wanting more.
+
+Color Scheme: The color palette should be both bold and subdued. We envision a mix of earthy tones with flashes of electric neon, creating a contrast that is both jarring and soothing. The colors should be both natural and artificial, reflecting the mutant nature of our flowers. It’s important that the colors don’t distract from the content, but they should also be a focal point of the design.
+
+Footer: The footer should be simple yet complex, containing all the necessary information without taking up too much space, but also feeling expansive. Include links to our social media accounts, but make them slightly hidden so that only determined users will find them. The footer should feel like the end of the page, but also like there might be something more if the user scrolls just a bit further.
+
+Technical Specifications:
+
+Responsiveness: The site should be fully responsive, working seamlessly across all devices. However, the experience should be slightly different on mobile versus desktop, making each version feel like a unique journey.
+
+Load Time: The homepage should load quickly but also have a slight delay, creating a sense of anticipation. It should feel instant, but also like it took just a moment longer than expected.
+
+SEO Optimization: While we want the page to be optimized for search engines, it should also feel hidden and exclusive, like a secret garden that only the most intrepid explorers will find.
+
+Browser Compatibility: Ensure the site works perfectly on all modern browsers, but also include some quirks that only show up on older versions, adding to the mysterious nature of the shop.
+
 Conclusion:
-The development of this video social media platform demands a balance between cutting-edge technology, performance, and user experience. The platform should be a benchmark in community interaction and video content delivery, though simplicity in design and execution should remain a priority where possible. The developer is encouraged to use their discretion in choosing the most effective tools and technologies to meet these objectives, while also ensuring the platform is future-proofed and scalable.
+
+In summary, the "Flower Powerful" homepage should be a masterpiece of contradictions, where every element feels both deliberate and accidental, clear yet confusing. It should leave users with a sense of wonder and a touch of unease, perfectly capturing the essence of our mutant flower shop. Please ensure that the final design is both exactly what we envisioned and completely different, exceeding all expectations by defying them.
+
+We look forward to seeing your interpretation of this brief!
